@@ -1,0 +1,44 @@
+{
+  "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+  "version": "v1.0.0",
+  "entity": {
+    "type": "individual",
+    "role": "maintainer",
+    "name": "Asutosh Rath",
+    "email": "asutoshrath26@gmail.com",
+    "phone": "",
+    "description": "I'm a recent graduate from NITK Surathkal, currently working as an Integrity Engineer at ExxonMobil in Bengaluru. During the severe Delhi air quality crisis, I found myself questioning a fundamental gap in how we measure air pollution: government AQI readings come from sparse monitoring stations, often kilometers away from where people actually live and breathe. A mother in Koramangala checking the AQI on her phone sees a reading from BTM Layout — but that's not the air her child is breathing at the neighborhood park. This realization sparked Project Vaayu: an open-source, affordable, accurate air quality monitor that anyone can use to know what they're actually breathing, right here, right now. I bring hands-on experience with Arduino, Raspberry Pi, and electronics prototyping, combined with access to 3D printing for enclosure development.",
+    "webpageUrl": {
+      "url": "https://github.com/61-Keys"
+    }
+  },
+  "projects": [{
+    "guid": "project-vaayu",
+    "name": "Project Vaayu",
+    "description": "Project Vaayu (Sanskrit for 'wind/air') is an open-source hardware initiative to create an affordable (₹5,000 / ~$60 USD) air quality monitor enabling hyperlocal AQI measurement anywhere in India.\n\n**The Problem:** Government CPCB stations are sparse — Bangalore has only a handful of monitors for 13 million people. Air quality varies dramatically block-by-block, yet people make health decisions based on readings from stations 5-10km away.\n\n**The Solution:** A portable, USB-C powered device displaying real-time PM2.5 AQI:\n• ±10% accuracy via environmental correction + auto-calibration against CPCB API\n• No app required — OLED display shows AQI number and category\n• One-time WiFi setup for calibration, then fully offline\n• Weather-resistant for outdoor use\n• Fully open-source: hardware, firmware, enclosure STLs, documentation\n\n**Why Open Source:** Air pollution reduces Indian life expectancy by 5+ years. Accurate monitoring shouldn't be a privilege. Open-sourcing enables community replication and eventually a crowdsourced hyperlocal air quality network.\n\n**Technical Approach:**\n• Plantower PMS5003 laser particle sensor\n• BME280 for temperature/humidity correction\n• ESP32-C3 with USB-C and WiFi\n• India-specific correction factors tuned against CPCB data\n• Auto-calibration via CPCB public API",
+    "webpageUrl": {
+      "url": "https://github.com/61-Keys/vaayu"
+    },
+    "repositoryUrl": {
+      "url": "https://github.com/61-Keys/vaayu"
+    },
+    "licenses": ["MIT"],
+    "tags": ["open-hardware", "air-quality", "environment", "iot", "india", "health", "citizen-science", "esp32", "sensors"]
+  }],
+  "funding": {
+    "channels": [{
+      "guid": "bank-transfer",
+      "type": "bank",
+      "address": "",
+      "description": "Bank transfer (details provided upon grant approval)"
+    }],
+    "plans": [{
+      "guid": "full-development",
+      "name": "Complete Development to Open-Source Release",
+      "description": "Funding to take Project Vaayu from concept to fully documented open-source release.\n\n**Milestone 1 (Month 1-2): Breadboard Prototype — ₹25,000**\n• Procure components (PMS5003, ESP32-C3, BME280, OLED display)\n• Assemble breadboard prototype\n• Basic firmware: sensor reading + display\n• Initial accuracy testing against nearest CPCB station\n• Deliverable: Working prototype, initial accuracy report\n\n**Milestone 2 (Month 2-3): Correction Algorithms — ₹20,000**\n• Implement humidity correction formula (peer-reviewed research-based)\n• Implement temperature correction\n• Validate accuracy improvement against CPCB readings\n• Deliverable: Correction algorithm code, accuracy comparison data\n\n**Milestone 3 (Month 3-4): Auto-Calibration System — ₹30,000**\n• WiFi provisioning (captive portal setup)\n• CPCB API integration for real-time reference data\n• Calibration factor calculation and storage\n• Edge case handling (no WiFi, API errors, sensor warm-up)\n• Deliverable: Complete calibration system, user flow documentation\n\n**Milestone 4 (Month 4-5): Enclosure & Integration — ₹35,000**\n• Design weather-resistant enclosure with proper airflow\n• 3D print iterations (3-5 revisions expected)\n• Thermal management validation\n• Full integration testing\n• Real-world testing: hot afternoon, monsoon humidity, dusty conditions\n• Deliverable: Final enclosure STL files, integration test report\n\n**Milestone 5 (Month 5-6): Documentation & Release — ₹20,000**\n• Complete bill of materials with India sourcing links\n• Step-by-step assembly guide with photos\n• Firmware documentation and code cleanup\n• Calibration user guide\n• Blog post / forum announcement\n• Deliverable: GitHub release with all artifacts, documentation site\n\n**Budget Breakdown:**\n• Components (5 prototype units): ₹20,000\n• PCB fabrication: ₹8,000\n• 3D printing filament + iterations: ₹7,000\n• Reference device for validation: ₹15,000\n• Testing across conditions (travel, time): ₹10,000\n• Documentation hosting: ₹5,000\n• Contingency: ₹15,000\n\n**Community Engagement (per FOSS United requirements):**\n• Quarterly updates on FOSS United forum\n• Talk submission to IndiaFOSS / relevant meetups\n• Open to mentoring through FOSS in Education programs",
+      "amount": 150000,
+      "currency": "INR",
+      "frequency": "one-time"
+    }]
+  }
+}
