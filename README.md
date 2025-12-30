@@ -27,11 +27,11 @@ When you check the AQI on your phone or a weather app, you're seeing a reading f
 
 ### A Real Example
 
-Consider a mother living in Koramangala, Bangalore. She checks the AQI on her phone before taking her child to the park. The app shows **AQI 85 (Moderate)** — seems acceptable for outdoor play.
+Consider a mother living in Koramangala, Bangalore. She checks the AQI on her phone before taking her child to the park. The app shows **AQI 85 (Moderate)** ; seems acceptable for outdoor play.
 
 But that reading comes from the CPCB monitoring station in BTM Layout, approximately 4 kilometers away, positioned near a major road for traffic pollution monitoring.
 
-The actual AQI at her neighborhood park — adjacent to an ongoing construction project — could be **AQI 160 (Unhealthy)**. Her child spends two hours breathing air that's nearly twice as polluted as she believed.
+The actual AQI at her neighborhood park which is adjacent to an ongoing construction project could be **AQI 160 (Unhealthy)**. Her child spends two hours breathing air that's nearly twice as polluted as she believed.
 
 **She has no way to know. The infrastructure to tell her doesn't exist.**
 
@@ -45,10 +45,10 @@ This isn't a hypothetical edge case. It's the daily reality for hundreds of mill
 
 ### Design Principles
 
-1. **Accuracy over features** — ±10% accuracy target, validated against government reference stations
-2. **Accessibility over complexity** — No app required, no technical knowledge needed
-3. **Affordability over premium** — Target cost ≤₹5,000 (~$60 USD)
-4. **Open over proprietary** — All designs, code, and documentation freely available
+1. **Accuracy over features** : ±10% accuracy target, validated against government reference stations
+2. **Accessibility over complexity** : No app required, no technical knowledge needed
+3. **Affordability over premium** : Target cost ≤₹5,000 (~$60 USD)
+4. **Open over proprietary** : All designs, code, and documentation freely available
 
 ### Specifications
 
@@ -179,7 +179,6 @@ By open-sourcing Vaayu:
 
 The long-term vision: thousands of Vaayu devices across Indian cities, optionally contributing anonymized readings to create hyperlocal air quality maps with street-level resolution.
 
-This is only possible with open-source — no single company or organization can deploy enough sensors to achieve this coverage. But a community can.
 
 ---
 
