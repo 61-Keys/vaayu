@@ -1,0 +1,46 @@
+{
+  "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+  "version": "v1.0.0",
+  "entity": {
+    "type": "individual",
+    "role": "maintainer",
+    "name": "Asutosh Rath",
+    "email": "asutoshrath26@gmail.com",
+    "phone": "",
+    "description": "Engineer at ExxonMobil, NITK Surathkal graduate. Building open hardware for environmental monitoring. Experience with Arduino, Raspberry Pi, and 3D printing.",
+    "webpageUrl": {
+      "url": "https://github.com/61-Keys"
+    }
+  },
+  "projects": [{
+    "guid": "project-vaayu",
+    "name": "Project Vaayu",
+    "description": "Open-source air quality monitor for India. Affordable (₹5,000), accurate (±10%), portable. Uses PMS5003 sensor + ESP32-C3 with auto-calibration against government CPCB stations. No app needed — just plug in and read AQI on display. Fully open: hardware, firmware, enclosure STLs.",
+    "webpageUrl": {
+      "url": "https://github.com/61-Keys/vaayu"
+    },
+    "repositoryUrl": {
+      "url": "https://github.com/61-Keys/vaayu"
+    },
+    "licenses": ["spdx:MIT"],
+    "tags": ["open-hardware", "air-quality", "iot", "india", "esp32", "sensors", "environment", "health"]
+  }],
+  "funding": {
+    "channels": [{
+      "guid": "bank-transfer",
+      "type": "bank",
+      "address": "",
+      "description": "Bank transfer — details provided upon grant approval"
+    }],
+    "plans": [{
+      "guid": "development-grant",
+      "status": "active",
+      "name": "Development to Open-Source Release",
+      "description": "6-month development: breadboard prototype, environmental corrections, auto-calibration system, 3D-printed enclosure, documentation. Deliverables: working device, complete open-source release with build guides.",
+      "amount": 10000,
+      "currency": "USD",
+      "frequency": "one-time",
+      "channels": ["bank-transfer"]
+    }]
+  }
+}
